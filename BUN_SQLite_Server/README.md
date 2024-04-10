@@ -55,5 +55,3 @@ This server template relies on the following dependencies:
 - [Elysia](https://elysia.deno.dev/): A web framework for Bun.
 - [Drizzle](https://github.com/drizzle-team/drizzle-orm): An ORM for SQL databases.
 - [SQLite](https://www.sqlite.org/index.html): A self-contained, serverless, zero-configuration, transactional SQL database engine.
-
-Feel free to modify this description as needed to better fit the specifics of your Bun, Elysia, Drizzle, and SQLite server template.
