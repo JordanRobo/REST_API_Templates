@@ -1,23 +1,40 @@
-# REST API Templates
+# Rest API Templates Monorepo
 
-This monorepo contains a collection of basic CRUD API servers written in various languages and frameworks. Each folder represents a different API server implementation.
+This monorepo is a collection of server templates for building RESTful APIs with basic CRUD (Create, Read, Update, Delete) functionality. The goal is to provide a starting point for various projects that require a server to handle database operations, with each template written in a different language or framework.
 
-## Table of Contents
+## Overview
 
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
+The monorepo contains multiple folders, each representing a separate server template. Each template is designed to be self-contained, with its own set of dependencies, setup instructions, and documentation.
 
-## Introduction
+The templates currently included are:
 
-The REST API Templates project aims to provide a starting point for building CRUD API servers in different programming languages and frameworks. Whether you're a beginner looking to learn a new language or an experienced developer exploring different frameworks, this monorepo has got you covered.
+- **Bun, Elysia, Drizzle, SQLite**: A server template built with Bun, Elysia, Drizzle ORM, and SQLite database.
+
+More server templates will be added to the monorepo over time, covering different languages, frameworks, and database systems.
 
 ## Getting Started
 
-To get started with a specific API server implementation, navigate to the corresponding folder and follow the instructions provided in the README file of that folder. Each folder contains a self-contained API server project with its own set of dependencies and build instructions.
+To get started with any of the server templates, follow these steps:
 
-## Folder Structure
+1. Navigate to the desired server template folder within the monorepo.
+2. Follow the setup instructions provided in the template's README file to install the required dependencies.
+3. Run the server using the provided commands.
+4. Interact with the API using tools like Postman, curl, or a web browser.
 
-The monorepo is organized into folders, each representing a different API server implementation. The folder structure is as follows:
+Each server template's README will provide detailed instructions on how to set up the environment, run the server, and use the available API endpoints.
+
+## Contributing
+
+Contributions are welcome! If you'd like to add more server templates to this monorepo, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your server template: `git checkout -b my-server-template`.
+3. Add your server template files to a new directory within the monorepo.
+4. Create a README file for your server template, describing the setup process, usage instructions, and available API endpoints.
+5. Commit your changes: `git commit -m "Add my-server-template"`.
+6. Push to the branch: `git push origin my-server-template`.
+7. Open a pull request on the main repository.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
