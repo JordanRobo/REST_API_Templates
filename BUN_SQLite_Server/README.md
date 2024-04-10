@@ -1,10 +1,3 @@
-# Elysia with Bun runtime
-
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
 ## Bun, Elysia, Drizzle, SQLite
 
 This template provides a server built with [Bun](https://bun.sh/), a modern JavaScript runtime, [Elysia](https://elysia.deno.dev/), a web framework for Bun, [Drizzle](https://github.com/drizzle-team/drizzle-orm), an ORM for SQL databases, and [SQLite](https://www.sqlite.org/index.html), a self-contained, serverless, zero-configuration, transactional SQL database engine.
@@ -12,19 +5,18 @@ This template provides a server built with [Bun](https://bun.sh/), a modern Java
 ### Setup
 
 1. To get started with this template, simply paste this command into your terminal:
-  ```bash
-  //to-do add template download
-  ```
+   ```bash
+   //to-do add template download
+   ```
 2. Install the dependancies:
    ```bash
    bun install
    ```
-
-2. Initialize the database and seed it with sample data:
+3. Initialize the database and seed it with sample data:
    ```bash
    bun migrate
    ```
-   This command will create a `users` table with columns `id`, `firstName`, `lastName`, and `email`, and insert four sample users.
+This command will create a `users` table with columns `id`, `firstName`, `lastName`, and `email`, and insert four sample users.
 
 ### Usage
 
