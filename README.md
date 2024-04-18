@@ -1,14 +1,25 @@
 # Rest API Templates Monorepo
 
-This monorepo is a collection of server templates for building RESTful APIs with basic CRUD (Create, Read, Update, Delete) functionality. The goal is to provide a starting point for various projects that require a server to handle database operations, with each template written in a different language or framework.
+This monorepo is a collection of server templates for building RESTful APIs with basic CRUD (Create, Read, Update, Delete) functionality all with a basic SQLite Database. The goal is to provide a starting point for various projects that require a server to handle database operations, with each template written in a different language or framework.
 
 ## Overview
 
-The monorepo contains multiple folders, each representing a separate server template. Each template is designed to be self-contained, with its own set of dependencies, setup instructions, and documentation.
+The monorepo contains multiple folders, each representing a separate language. Within each language folder are templates using different frameworks. Each template is designed to be self-contained, with its own set of dependencies, setup instructions, and documentation.
 
 The templates currently included are:
 
-- **Bun, Elysia, Drizzle, SQLite**: A server template built with Bun, Elysia, Drizzle ORM, and SQLite database.
+### Bun
+- **Elysia & Drizzle**: Built with Bun, Elysia JS and Drizzle ORM.
+
+### Go
+
+### Node.js
+
+### Python
+
+### Rust
+- **Hyper.rs & SeaORM**: Built with Rust, Hyper.rs and SeaORM.
+- **Actix Web & Diesel**: Built with Rust, Actix Web and Diesel ORM.
 
 More server templates will be added to the monorepo over time, covering different languages, frameworks, and database systems.
 
