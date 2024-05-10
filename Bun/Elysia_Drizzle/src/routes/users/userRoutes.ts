@@ -25,8 +25,8 @@ const userRoutes = new Elysia({ prefix: '/users' })
             email: t.Optional(t.String()) 
         }) 
     })
-    .delete("/", ({body}) => deleteUser(body),{
-        body: t.Object({ 
+    .delete("/:id", ({params: {id}}) => deleteUser(id), {
+        params: t.Object({ 
             id: t.Numeric() 
         })
     });

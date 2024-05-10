@@ -5,8 +5,8 @@ import { sqliteTable, integer, text } from 'drizzle-orm/sqlite-core';
 
 const users = sqliteTable( 'users', {
     id: integer('id').primaryKey({ autoIncrement: true }),
-    firstName: text('firstName'),
-    lastName: text('lastName'),
+    firstName: text('firstname'),
+    lastName: text('lastname'),
     email: text('email'),
 });
 
@@ -52,9 +52,9 @@ export async function updateUser(id: number, options: { firstName?: string, last
     }
 }
 
-export async function deleteUser( options:{ id: number}) {
+export async function deleteUser( id: number) {
     try {
-        const { id } = options;
+        const user = await db.select().from(users).where(eq(users.id, id));
 
         return await db.delete(users).where(eq(users.id, id));
     } catch (error: unknown) {

@@ -5,8 +5,8 @@ const db = new Database("db.sqlite", { create: true });
 const users = db.query(`
     CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        firstName TEXT,
-        lastName TEXT,
+        firstname TEXT,
+        lastname TEXT,
         email TEXT
     );`
 );
@@ -14,7 +14,7 @@ const users = db.query(`
 users.run();
 
 const insertUsers = db.query(`
-    INSERT INTO users (firstName, lastName, email)
+    INSERT INTO users (firstname, lastname, email)
     VALUES
         ('John', 'Doe', 'john_doe@mail.com'),
         ('Jane', 'Doe', 'jane_doe@mail.com'),
